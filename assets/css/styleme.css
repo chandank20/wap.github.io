@@ -16,3 +16,8 @@ h1,h3 {
     font-size: 14px;
     font-style: italic;
 }
+#myFavMovies ul{
+    color: darkcyan;
+    font-size: 14px;
+    font-weight: bold;
+}
