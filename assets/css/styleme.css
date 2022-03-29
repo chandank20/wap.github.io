@@ -1,0 +1,18 @@
+body{
+    background-color: #eee;
+    font-size: 16px;
+}
+h1{
+    font-family: Arial Black;
+}
+h1>span:hover{
+    background-color: blueviolet;
+}
+h1,h3 {
+    color: springgreen;
+}
+#myFavMovies .myInfo{
+    font-family: cursive;
+    font-size: 14px;
+    font-style: italic;
+}
