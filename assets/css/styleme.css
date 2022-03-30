@@ -21,3 +21,10 @@ h1,h3 {
     font-size: 14px;
     font-weight: bold;
 }
+#div_img{
+    display: inline-flex;
+}
+#strong_name{
+    font-family: Arial; 
+    color: yellowgreen;
+}
