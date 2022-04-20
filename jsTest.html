@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Test data
+    </title>
+    <script>
+        const http = require("http");
+        const fs = require('fs');
+        const util = require('util');
+        const server = http.createServer((req, res) => {
+            console.log(`${req.url} ${req.method}`);
+            res.setHeader("Content-Type", "image/jpg");
+            res.statusCode = 200;
+            fs.readFile('./test.jpg',(err, data)=>{
+                res.end(data);
+            });
+            fs.createReadStream('./test.jpg').pipe(res);
+            res.end(fs.readFileSync('./test2.jpg'));
+            const promise = util.promisify(fs.readFile);
+            promise("./test2.jpg").then((data) =>{
+                res.end(data);
+            }).catch((err) => res.end(err));
+        }).listen(3000);
+        console.log('Listening');
+        
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div id="a">Text for a
+
+    </div>
+
+</body>
+
+</html>

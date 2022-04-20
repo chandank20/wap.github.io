@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>User Profile</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/audio.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">Radhika</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul id="section-login">
+          <form method="post" role="form" class="php-email-form">
+          <li>
+              <div class="row">
+                <div class="col-md-5 form-group">
+                  <input type="text" name="name" class="form-control" id="username" placeholder="User Name" required>
+                </div>
+                <div class="col-md-5 form-group mt-3 mt-md-0">
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                  <label id="error-message" class="hide"></label>
+                </div>
+                <div class="col-md-2 form-group mt-3 mt-md-0">
+                  <button id="btn-login" class="nav-link scrollto active" type="submit">Login</button>
+                </div>
+              </div>
+              
+          </li>            
+        <!-- <li> -->
+          <!-- <a id="btn-login" class="nav-link scrollto active" href="">Login</a> -->
+          <!-- <button id="btn-login" class="nav-link scrollto active" type="submit">Login</button>
+        </li>  -->
+      </form>
+      </ul>
+        <ul id="section-logout" style="display: none;">          
+          <li><a id="btn-logout" class="nav-link scrollto" href="">Logout</a></li>
+        </ul>
+        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>My Music Website</span></h2>        
+          <p class="animate__animated animate__fadeInUp"><img src="assets/img/portfolio/maroon-5.jpg" style="width: 60%;" alt="profile-01"/></p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>My Music Website</span></h2>
+          <p class="animate__animated animate__fadeInUp"><img src="assets/img/portfolio/bts.webp" style="width: 60%;" alt="profile-01"/></p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>My Music Website</span></h2>
+          <p class="animate__animated animate__fadeInUp"><img src="assets/img/portfolio/Taylor-Swift.jpg" style="width: 50%;" alt="profile-01"/></p>
+        </div>
+      </div>
+    </div>
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+  </section><!-- End Hero -->
+
+  <main id="main" >
+
+    <!-- ======= Breadcrumbs ======= -->    
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Your Profile</h2>
+          <form action="#" method="post" role="form" id="search-form" style="width: 80%;" class="TTphp-email-form">
+            <div id="div-search" class="row">
+            <div class="col-md-9 form-group">
+              <input type="text" name="searchval" class="form-control" id="search" placeholder="Search Song...." required>
+            </div>
+            <div class="col-md-3 form-group">
+              <button id="search_btn" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+        <ol>
+        </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+    
+    <section class="inner-page">
+      <div class="container">
+        <h3 id="interest">Song You May Interest</h3>
+        <h3 id="search-title" class="hide">Result of "<span id="search-data"></span>"</h3>
+        <table class="table table-hover table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#Id</th>
+              <th scope="col">Title</th>
+              <th scope="col">Realise Date</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody id="songList">
+            
+          </tbody>
+        </table>
+
+
+        <h3 style="margin-top: 50px;">Your Playlist</h3>
+        <table class="table table-hover table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#Id</th>
+              <th scope="col">Title</th>
+              <th scope="col">Realise Date</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody id="userPlayList">
+            
+          </tbody>
+        </table>
+      </div>
+    </section>
+  
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      
+        <div id="audio-player" class="audio-player">
+            <div id="timeline" class="timeline">
+                <div class="progress"></div>
+            </div>
+            <div class="controls">
+              <div class="shuffle">
+                <button id="shuffle-icon" class="audio-btn fa fa-random fa-2x"></button>
+            </div>
+                <div class="play-container">
+                    <div class="backward">
+                        <button id="backward-icon" class="audio-btn fa fa-backward fa-2x"></button>
+                    </div>
+                    <div class="toggle-play play">
+                        <button id="play-icon" class="audio-btn fa fa-play-circle fa-2x"></button>
+                    </div>
+                    <!-- <div class="stop">
+                        <button id="stop-icon" class="audio-btn fa fa-stop fa-2x"></button>
+                    </div> -->
+                    <div class="forward">
+                        <button id="forward-icon" class="audio-btn fa fa-forward fa-2x"></button>
+                    </div>
+                </div>
+                <div id="song-title">-</div>
+                <div class="time">
+                    <div class="current">0:00</div>
+                    <div class="divider">/</div>
+                    <div class="length">0:00</div>
+                </div>
+                <!-- <div class="shuffle">
+                    <button id="shuffle-icon" class="audio-btn fa fa-random fa-2x"></button>
+                </div> -->
+                <div class="volume-container">
+                    <div class="volume-button">
+                        <div class="audio-btn volume fa fa-volume-up fa-2x"></div>
+                    </div>
+                    <div id="volume-slider" class="volume-slider">
+                        <div id="volume-percentage" class="volume-percentage"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+      <h3>Radhika</h3>
+    
+      <div class="copyright">
+        &copy; Copyright <strong><span>Radhika</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/audio.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
