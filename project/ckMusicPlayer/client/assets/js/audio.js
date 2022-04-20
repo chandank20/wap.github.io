@@ -212,18 +212,6 @@ backwardBtn.addEventListener("click", () => {
   audio.play();
 });
 
-//stop the playing
-// stopBtn.addEventListener("click", () => {
-//   stopPlayback();
-// });
-
-//stop audio playback
-function stopPlayback() {
-  audio.pause();
-  audio.currentTime = 0;
-  playBtn.classList.remove("fa-pause");
-  playBtn.classList.add("fa-play-circle");
-}
 
 function removeFromCurrentPlayer(songId) {
   fetch("http://localhost:5500/users/removeSong/" + songId, {
@@ -234,14 +222,11 @@ function removeFromCurrentPlayer(songId) {
   })
     .then((res) => res.json())
     .then((res) => {
-      if (res.url == audio.src) {
-        stopPlayback();
+      if (res.url == audio.src) {        
         audio.currentTime = 0;
         document.getElementById("song-title").innerHTML = "-";
         audioPlayer.querySelector(".progress").style.width=0;
-        audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
-          0
-        );
+        audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(0);
         current_song_track=-1;
         audio.src = "";
       }
