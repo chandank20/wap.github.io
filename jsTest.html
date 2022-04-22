@@ -10,13 +10,14 @@
         const fs = require('fs');
         const util = require('util');
         const server = http.createServer((req, res) => {
+            console.log("hello");
             console.log(`${req.url} ${req.method}`);
             res.setHeader("Content-Type", "image/jpg");
             res.statusCode = 200;
             fs.readFile('./test.jpg',(err, data)=>{
                 res.end(data);
             });
-            fs.createReadStream('./test.jpg').pipe(res);
+            fs.createReadStream('./test.jpg').pipe(res); 
             res.end(fs.readFileSync('./test2.jpg'));
             const promise = util.promisify(fs.readFile);
             promise("./test2.jpg").then((data) =>{
